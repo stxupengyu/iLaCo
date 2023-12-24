@@ -35,13 +35,13 @@ def main():
     #dataset
     parser.add_argument("--mode", default="rcn", type=str,
                         help="mode")
-    parser.add_argument("--dataset", default="physics", type=str,
+    parser.add_argument("--dataset", default="XXXXXX", type=str,
                         help="The input data directory")   
-    parser.add_argument("--ori_data_dir", default="/data/pengyu/", type=str,
+    parser.add_argument("--ori_data_dir", default="/data/XXXXXX/", type=str,
                         help="The input data directory")   
-    parser.add_argument("--data_dir", default="/data/pengyu/NMLL", type=str,
+    parser.add_argument("--data_dir", default="/data/XXXXXX/NMLL", type=str,
                         help="The input data directory")
-    parser.add_argument("--code_dir", default="/home/pengyu/code/nmll/ilaco", type=str,
+    parser.add_argument("--code_dir", default="/home/XXXXXX/code/nmll/ilaco", type=str,
                         help="The input data directory")    
     parser.add_argument("--data_name", default="train_rho0.6.txt", type=str,
                         help="The input data directory")
