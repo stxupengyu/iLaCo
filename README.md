@@ -1,35 +1,4 @@
 
-# run
-
-## 42 servers
-/data/pengyu/anaconda3/envs/pt19/bin/python /home/pengyu/code/nmll/ilaco/main.py  --gpu 7 --data_name data_rho0.6.txt  
-/data/pengyu/anaconda3/envs/pt19/bin/python /home/pengyu/code/nmll/ilaco/main.py  --gpu 6 --data_name data_rho0.4.txt
-/data/pengyu/anaconda3/envs/pt19/bin/python /home/pengyu/code/nmll/ilaco/main.py  --gpu 5 --data_name data_rho0.2.txt
-/data/pengyu/anaconda3/envs/pt19/bin/python /home/pengyu/code/nmll/ilaco/main.py  --gpu 4 --data_name data_rho0.2.txt  --pretrained True
-
-
-
-## 18 servers
-/home/pengyu/anaconda3/envs/pt/bin/python /home/pengyu/code/nmll/ilaco/main.py  --gpu 7 --mode rcn --rate10 0.0 --pretrained False
-
-
---data_name data_rho0.6.txt
-
-# bash
-bash /home/pengyu/code/nmll/tabasco/run_tuning.sh rcn 0
-bash /home/pengyu/code/nmll/tabasco/run_tuning.sh 
-
-
-# scp to another server
-scp -r /data/pengyu/NMLL/physics pengyu@10.126.62.42:/data/pengyu/NMLL/
-scp -r /home/pengyu/code/nmll/led/ pengyu@10.126.62.42:/home/pengyu/code/nmll/
-scp -r /home/pengyu/code/nmll/ pengyu@10.126.62.42:/home/pengyu/code/
-scp -r /home/pengyu/code/nmll/ pengyu@10.126.56.18:/home/pengyu/code/
-
-
-
-
----
 
 Official code for our paper.  
 

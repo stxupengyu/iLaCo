@@ -55,7 +55,7 @@ def main():
                         help="max length of document")
     parser.add_argument('--vocab_size', type=int, default=500000,
                         help="vocabulary size of dataset")
-    parser.add_argument('--data_size', type=int, default=50000,
+    parser.add_argument('--data_size', type=int, default=999999,
                         help="vocabulary size of dataset")     
 
     #model
@@ -87,14 +87,14 @@ def main():
                         help="gradient clip")
     parser.add_argument('--seed', type=int, default=42,
                         help="random seed for initialization")
-    parser.add_argument('--test_each_epoch', type=bool, default=True,#True False
+    parser.add_argument('--test_each_epoch', type=bool, default=False,#True False
                         help="test performance on each epoch")
 
 
     #pretrained
     parser.add_argument('--pretrained', type=bool, default=False,   #True False
                         help="use pretrained LSFL model")
-    parser.add_argument("--pretrained_path", default='/data/pengyu/NMLL/model/lstm_rcn_20231223-135640.pth', type=str,
+    parser.add_argument("--pretrained_path", default='xxx', type=str,
                         help="path of pretrained LSFL model")
     parser.add_argument('--debug', type=bool, default=False,   #True False
                         help="use pretrained LSFL model")

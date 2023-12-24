@@ -114,9 +114,9 @@ def evaluate_valid(targets, prediction, mlb, args):
     for top_K in [1, 3, 5]:
         precision = get_precision(prediction, targets, mlb, top_K, args)
         result.append(precision)
-    # for top_K in [1, 3, 5]:
-    #     ndcg = get_ndcg(prediction, targets, mlb, top_K, args)
-    #     result.append(ndcg)
+    for top_K in [1, 3, 5]:
+        ndcg = get_ndcg(prediction, targets, mlb, top_K, args)
+        result.append(ndcg)
     return result
 
 def evaluate_test(targets, prediction, mlb, args):
