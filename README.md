@@ -1,6 +1,6 @@
 
 
-Official code for our paper.  
+Official code for our paper "Noisy Multi-Label Text Classification via Instance-Label Pair Correction".  NAACL 2024 
 
 ## Requirements: 
 * python==3.7.10
